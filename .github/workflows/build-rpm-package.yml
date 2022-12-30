@@ -26,5 +26,5 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Installation dependencies
-        run: yum install -y dnf-plugins-core && dnf config-manager --set-enable powertools && dnf install -y golang glibc-static rpmdevtools rpmlint
+        run: echo $PWD && mv ./CentOS-Stream-PowerTools.repo /etc/yum.repos.d/ && dnf makecache && dnf install -y golang glibc-static rpmdevtools rpmlint
 
