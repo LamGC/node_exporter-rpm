@@ -26,5 +26,5 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Installation dependencies
-        run: yum config-manager --set-enable powertools && dnf install -y golang glibc-static rpmdevtools rpmlint
+        run: dnf config-manager --set-enable powertools && dnf install -y golang glibc-static rpmdevtools rpmlint
 
