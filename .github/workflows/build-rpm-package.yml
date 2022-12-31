@@ -26,5 +26,5 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Installation dependencies
-        run: dnf install -y dnf-plugins-core && dnf config-manager --set-enable cbr && dnf install -y golang glibc-static rpmdevtools rpmlint git
+        run: dnf install -y dnf-plugins-core && dnf config-manager --set-enable crb && dnf install -y golang glibc-static rpmdevtools rpmlint git
 
